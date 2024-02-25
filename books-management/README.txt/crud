@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "bff0cb67-f0b6-4ad7-9b50-dd7da6c13d88",
+		"name": "CRUD postman collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30891708",
+		"_collection_link": "https://martian-rocket-725141.postman.co/workspace/ab94ea10-0f6a-447c-80af-34f2bc52e242/collection/30891708-bff0cb67-f0b6-4ad7-9b50-dd7da6c13d88?action=share&source=collection_link&creator=30891708"
+	},
+	"item": [
+		{
+			"name": "localhost:3300/books",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3300/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3300/books/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3300/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3300/books",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"Harry Potter and the Philosopher Stone\",\r\n        \"author\": \"J.K. Rowling\",\r\n        \"genre\": \"fantasy\",\r\n        \"publication_year\": 1977\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3300/books",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3300/books",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"To Kill a Mockingbird\",\r\n        \"author\": \"Harper Lee\",\r\n        \"genre\": \"Fiction, Southern Gothic\",\r\n        \"publication_year\": 1960\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3300/books/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3300/books",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"title\": \"To Kill a Mockingbird\",\r\n        \"author\": \"Harper Lee\",\r\n        \"genre\": \"Fiction, Southern Gothic\",\r\n        \"publication_year\": 1960\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3300/books/18",
+					"host": [
+						"localhost"
+					],
+					"port": "3300",
+					"path": [
+						"books",
+						"18"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

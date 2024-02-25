@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+    <div id="content">
+    <h1>Book Management</h1>
+    <br>
+    <div>
+        <button onclick="getAllBooks()">GET ALL BOOKS</button>
+    </div>
+<br>
+<div>
+    <button onclick="getbookbyid()">GET BOOK BY ID</button>
+    <input type="text" id="idxyz" placeholder="Enter Id">
+</div>
+<br>
+<div>
+<button onclick="createbook1()">CREATE A BOOK</button>
+</div>
+</div>
+<br>
+<div>
+       <table id="booksTable" style="visibility: hidden;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Publication Year</th>
+                    <th>Action</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    
+    <div>
+        <form id="create_form" >
+            <input type="text" id="id1" placeholder="Id">
+            <input type="text" id="title1" placeholder="Title">
+            <input type="text" id="author1" placeholder="Author">
+            <input type="text" id="genre1" placeholder="Genre">
+            <input type="text" id="publication_year1" placeholder="Publication Year">
+            <input type="button" id="close" value="close" style="background-color: red;">
+        </form>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
+
